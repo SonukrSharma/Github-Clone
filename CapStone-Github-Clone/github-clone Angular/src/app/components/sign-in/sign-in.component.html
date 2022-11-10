@@ -1,0 +1,30 @@
+<div class="body-head">
+  <img src="https://img.icons8.com/ios-glyphs/64/000000/github.png" (click)="ToHome()"> 
+  <p class="sign-in">Sign in to GitHub</p>
+</div>
+
+<div class="login-body">
+  <form class="login-form" [formGroup]="loginForm" >
+    
+    <small style="color: red;">{{msg}}</small>
+    <fieldset>
+      <label for="email">Username or email address</label>
+      <input type="email" name="email" id="email" formControlName="emailId"><br>
+    </fieldset>
+    <fieldset>
+      <label for="Password" >
+        <span style="padding-top: 10px;">Password</span> <span style="color:blue;cursor: pointer;margin-left: 105px;">Forgot password?</span>
+      </label><br>
+      <input type="password" name="password" id="password" formControlName="password" >
+    </fieldset>
+    <fieldset>
+      <button type="submit" id="submit-button" (click)="toDashBoard()">Sign in</button>
+    </fieldset>
+  </form>
+</div>
+<div class="sign-up-body">
+  <span >New to Github?</span><span routerLink="/signup" style="color:blue; margin-left: 2px;cursor: pointer;">Create an account.</span>
+</div>
+<div class="foot">
+    <span style="color: blue;">Terms </span><span style="margin-left: 15px; color: blue;">Privacy</span> <span style="margin-left: 15px; color: blue;">Security</span><span id="contact" >Contact GitHub</span> 
+</div>

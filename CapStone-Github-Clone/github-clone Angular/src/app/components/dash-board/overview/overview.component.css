@@ -1,0 +1,72 @@
+.pinned{
+    padding-left :20px;
+}
+.pinned h3{
+    display: flex;
+    justify-content: center;
+}
+.new-repo{
+    margin-right: 20px;
+    color: whitesmoke;
+    background-color: #2da44e;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+.check{
+    display: grid;
+    grid-template-columns: 450px 450px;
+}
+.card{
+    display: flex;
+    width: 420px;
+    margin: 10px;
+    height: 100px;
+    padding: 20px;
+}
+.card-top{
+    display: grid;
+    grid-template-columns: 90% 10%;
+
+}
+.box{
+    margin-left: 10px;
+    height: 20px;
+    width: 50px;
+    padding-left: 8px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+.repo{
+   margin-left:10px;
+   color: blue;
+   font-weight: 500;
+}
+.repo:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.card img{
+    height: 25px;
+    width: 25px;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .type{
+    margin-top: 10px;
+
+  }
+  .type-text{
+    margin-left: 10px;
+  }

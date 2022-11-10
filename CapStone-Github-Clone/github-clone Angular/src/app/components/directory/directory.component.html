@@ -1,0 +1,77 @@
+<app-navbar></app-navbar>
+<div class="nav" >
+    <div class="top" style="width: 100%;display: flex;justify-content: space-between;">
+        <div class="left" style="display: flex;">
+            <img src="https://img.icons8.com/ios-filled/50/null/book.png"/>
+            <span style="color: blue;">{{userData.username}}/{{userData.data[repoID].repoName}}</span>
+            <div class="box" >
+                <p> public</p>
+            </div>
+        </div>
+        <div class="right" style="display: flex;">
+            <button>pin</button>
+            <button>unwatch</button>
+            <button>Fork</button>
+            <button>Star</button>
+        </div>
+    </div>
+    <div class="bottom" style="display: flex;">
+        <button>Code</button>
+        <button>Issues</button>
+        <button>Pull Requests</button>
+        <button>Actions</button>
+        <button>Projects</button>
+        <button>Wiki</button>
+        <button>Security</button>
+        <button>Insights</button>
+        <button>Settings</button>
+    </div>
+</div>
+<div class="main">
+    <div class="left-main">
+        <div class="top-main" style="display: flex;justify-content: space-between;">
+            <div class="left-center" >
+                <button>main</button>
+                <span>branch</span>
+                <span>tags</span>
+            </div>
+            <div class="right-center">
+                <button>Add Folder</button>
+                <button>Add File</button>
+                
+            </div>
+        </div>
+        <div class="center">
+            <div class="head">
+                <span><img src="https://avatars.githubusercontent.com/u/464297?v=4" id="profile-img" />{{userData.username}}</span>
+                <span>commit</span>
+            </div>
+            <hr style="margin: 0;">
+            <div *ngFor="let directory of userData.data[repoID].directories">
+                <div class="directory" >
+                    <div class="folder">
+                        <img src="https://img.icons8.com/material-rounded/24/339AF0/folder-invoices.png"/>
+                        <p (click)="onClick()">{{directory.folderName}}</p>
+                    </div>
+                    <div class="center-folder">
+                        <p>today</p>
+                    </div>
+                </div>
+               <hr style="margin:0 ;">
+            </div>
+            <div *ngFor="let file of userData.data[repoID].file">
+                <div class="files" >
+                    <div class="folder">
+                        <img src="https://img.icons8.com/ios/50/0000007A/file--v1.png"/>
+                        <p>{{file.filename}}</p>
+                    </div>
+                    <div class="center-folder">
+                        <p>today</p>
+                    </div>
+                </div>
+                <hr style="margin:0 ;">
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,85 @@
+*{
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.body-head{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sign-in{
+    margin:auto;
+    font-size:x-large;
+    justify-content: center;
+}
+img{
+    padding: 20px;
+    cursor: pointer;
+   
+}
+.login-body{
+    margin-top: 20px;
+    height: 240px;
+    width: 310px;
+    font-size: small;
+    border-radius: 10px;
+    border: solid 1px #ebeff1;
+    background-color: #f6f8fa;
+}
+.login-form{
+    margin: 20px;
+}
+input{
+    width: 100%;
+    height: 25px;
+    border: solid 1px ;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#submit-button{
+    width: 102%;
+    background-color: #2c9d37;
+    color: white;
+    border-radius: 5px;
+    border:solid 1px #2c9d37;
+    height: 35px;
+    font-size: medium;
+}
+#submit-button:hover{
+    background-color: green;
+}
+.sign-up-body{
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    font-size: small;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 15px;
+    border: solid 1px #ebeff1;
+    padding-bottom: 20px;
+}
+.sign-up-body span:nth-child(2):hover{
+    text-decoration: underline;
+    
+}
+.foot{
+    width: 250px;
+    margin-top: 80px;
+    display: flex;
+    cursor: default;
+    font-size: 11px;
+}
+.foot span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#contact{
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+#contact:hover{
+    color: blue;
+}

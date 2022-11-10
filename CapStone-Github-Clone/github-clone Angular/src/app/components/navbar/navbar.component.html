@@ -1,0 +1,25 @@
+<div class="navbar">
+    <div class="menu">
+        <img src="https://img.icons8.com/glyph-neue/48/ffffff/github.png" (click)="toHome()" style="cursor: pointer; height: 40px;" />
+        <form [formGroup]="searchForm"><fieldset>
+            <input type="search" name="search" id="searchbar" placeholder="Search or Jump to... " (keyup.enter)="toSearch()" formControlName="query">
+        </fieldset></form>
+        <div style="margin-top: 10px;">
+            <span>Pull Requests</span>
+            <span>Issues</span>
+            <span>Marketplace</span>
+            <span>Explore</span>
+        </div>
+    </div>
+    <div class="tools">
+        <!-- PROFILE PHOTO ICON -->
+        <div class="dropdown" style="margin-top:3px ;cursor: pointer;">
+            <img src="https://avatars.githubusercontent.com/u/464297?v=4" alt="" id="profile-icon">
+            <img src="https://img.icons8.com/material-rounded/8/f1f1f1/give-way.png" style="margin-left: 10px;"/>
+            <div class="dropdown-content">
+                <a (click)="signOut()">Sign Out</a>
+              </div>
+        </div>
+    </div>
+    
+</div>

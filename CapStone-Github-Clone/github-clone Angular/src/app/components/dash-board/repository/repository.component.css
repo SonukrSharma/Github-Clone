@@ -1,0 +1,67 @@
+.noRepo{
+    display: none;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display:flex;
+    height: 80px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border:none;
+}
+.card-top{
+    display: grid;
+    grid-template-columns: 85% 15%;
+
+}
+.box{
+    margin-left: 10px;
+    height: 20px;
+    width: 50px;
+    padding-left: 8px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+.repo{
+   margin-left:10px;
+   color: blue;
+   font-weight: 500;
+}
+.repo:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.card img{
+    height: 25px;
+    width: 25px;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .type{
+    margin-top: 10px;
+
+  }
+  .type-text{
+    margin-left: 10px;
+  }
+button{
+    padding: 5px;
+    width: 100px;
+    /* margin-left: 90px; */
+    border-radius: 10px;
+}
+.line{
+    width: 900px;
+    margin-left: 20px;
+}

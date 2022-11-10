@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container" style="margin: 30px;">
+    <div class="head">
+        <h3>Create a new repository</h3>
+        <p>A repository contains all project files, including the revision history </p>
+    </div>
+    <hr>
+    <div class="main">
+        <div class="left">
+            <p><b>Owner</b> <sup style="color: red;font-size: 15px;"> * </sup></p>
+            <button class="owner"><img src="https://avatars.githubusercontent.com/u/464297?v=4" id="profile-img" />{{userData.username}}</button>
+        </div>
+        <div class="center" style="padding-top: 5px;margin: 10px;">
+            <br>
+            <h2>/</h2>
+        </div>
+        <div class="right">
+            <form [formGroup]="NewRepo">
+                <fieldset>
+                    <label><b>Repository name</b> <sup style="color: red;font-size: 15px;"> * </sup></label><br>
+                    <input type="text" name="repoName" formControlName="repoName">
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+    <p>Great repository names are short and memorable. Need inspiration? How about <span style="color: rgb(1, 99, 1);"><b>refactored-octo-robot</b></span>?</p>
+    <hr>
+    <div class="choice">
+        <form >
+         
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="public"><img class="choice-img" src="https://img.icons8.com/ios-filled/50/null/book.png"/>Public</mat-radio-button>
+            <mat-radio-button value="private"><img class="choice-img" src="https://img.icons8.com/ios-filled/50/null/book.png"/>Private</mat-radio-button>
+        </mat-radio-group>
+         <p>(This is still in beta version, currently only public Repositories are available)</p>  
+    </form>
+    </div>
+    <hr>
+    <span><img src="https://img.icons8.com/ios/16/000000/info--v1.png"/> You are creating a public repository in your personal account.</span>
+    <hr>
+    <button class="submit" (click)="onClick()">Create Repository</button>
+</div>

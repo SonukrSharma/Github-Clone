@@ -1,0 +1,47 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+#profile-img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.owner{
+    background-color: #f6f8fa;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(155, 155, 155) ;
+    border-radius: 10px;
+    box-shadow:rgba(27, 31, 36, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+}
+input{
+    width: 300px;
+    border: 1px solid rgb(155, 155, 155) ;
+    background-color: #f6f8fa;
+    outline-color: blue;
+    border-radius: 5px;
+    margin-top: 6px;
+    height: 35px;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+.choice-img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}  
+.submit{
+    background-color: green;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius:5px ;
+    padding: 10px;
+}
+.submit:hover{
+    background-color:rgb(2, 148, 2) ;
+}

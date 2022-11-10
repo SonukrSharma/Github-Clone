@@ -1,0 +1,45 @@
+
+<app-navbar></app-navbar>
+<div class="profile-body">
+    <div class="left-body">
+        <!-- PROFILE PHOTO  -->
+        <img src="https://avatars.githubusercontent.com/u/464297?v=4" alt="" id="profile-img">
+        <h2 style="margin-top: 20px;">{{userData.name}}</h2>
+        <h3>{{userData.username}}</h3>
+        <button class="edit" routerLink="/BetaVersion"> Edit profile </button>
+        <!-- N FOLLOWERS -->
+        <span class="follow"><img src="https://img.icons8.com/small/16/000000/group-background-selected.png"/> 1 follower </span><span>.</span><span  class="follow"> 1 following</span>
+    </div>
+    <div class="right-body" >
+        <div class="nav" style="margin-left: 20px;">
+            <button routerLink="overview">Overview</button>
+            <button routerLink="repo">Repositories</button>
+            <button>Projects</button>
+            <button>Packages</button>
+            <button>Stars</button>
+        </div>
+        <hr style="width: 900px;margin-left: 20px;">
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<hr>
+<footer>
+    <span>  <img src="https://img.icons8.com/ios-glyphs/42/6e7781/github.png" (click)="toHome()"> 
+        © 2022 GitHub, Inc.</span>
+    <span style="color: blue;margin-left:50px;">    
+        <a>Terms</a>
+        <a>Privacy</a>
+        <a>Security</a>
+        <a>Status</a>
+        <a>Docs</a>
+        <a>Contact GitHub</a>
+        <a>Pricing</a>
+        <a>API</a>
+        <a>Training</a>
+        <a>Blog</a>
+        <a>About</a>
+    </span>
+</footer>
+ 

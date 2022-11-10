@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="main">
+    
+    <div class="right">
+        <h3>Showing available Users results </h3>
+        <hr>
+        <div class="search">
+            <div *ngIf="empty">
+                <h1>NO DATA FOUND FOR GIVEN KEYWORD</h1>
+            </div>
+            <div *ngIf="show" >
+
+                <div *ngFor="let res of result">
+
+                    <div class="card" >
+                        <div class="card-top">
+                            <div style="display: flex;flex-direction: row;">
+                                <img src="https://img.icons8.com/ios-filled/50/null/book.png"/>
+                                <span class="repo" id="repo" (click)="onClick(res.id)">{{res.username}}</span>
+                            </div>
+                        </div>
+                        <div class="type">
+                            <span class="dot"></span>
+                            <span class="type-text">{{res.data[0].repoName}}</span>
+                        </div>
+                        <div class="type">
+                            <span class="dot"></span>
+                            <span class="type-text">{{res.data[1].repoName}}</span>
+                        </div>
+                    </div>
+                    <!-- <hr style="margin:0;"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

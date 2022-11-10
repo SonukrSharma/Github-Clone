@@ -1,0 +1,30 @@
+<div class="pinned">
+    <div style="display: flex;justify-content: space-between;">
+        <span>Popular Repositories</span>
+        <button class="new-repo" routerLink="/new"><img src="https://img.icons8.com/ios-filled/50/null/book.png" style="height: 30px;width: 30px;padding: 5px;"/>New</button>
+    </div>
+    <div class="show" id="show" *ngIf="empty">
+        <h3>You don't have any public repositories yet.</h3>
+    </div>
+    <div class="check" *ngIf="show" >
+        <div class="reposiories" *ngFor="let repo of userData.data">
+            <div class="card" >
+                <div class="card-top">
+                    <div style="display: flex;flex-direction: row;">
+                        <img src="https://img.icons8.com/ios-filled/50/null/book.png"/>
+                        <span class="repo" (click)="OnClick(repo.repoName)">{{repo.repoName}}</span>
+                        <div class="box">
+                            <span> public</span>
+                        </div>
+                    </div>
+                    <img src="https://img.icons8.com/ios-glyphs/30/null/circled-menu.png" style="right: 1;"/>
+                </div>
+                <div class="type">
+                    <span class="dot"></span>
+                    <span class="type-text">Javascript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
